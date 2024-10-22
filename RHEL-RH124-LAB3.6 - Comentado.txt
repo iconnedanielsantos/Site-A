@@ -1,0 +1,63 @@
+Exercício 3.6
+
+[student@workstation ~]$ lab start files-manage // Esse comando inicia (start) o laboratório (lab) chamado files-manage (files-manage)
+
+[student@workstation ~]$ ssh student@servera // Esse comando faz uma conexão remota (ssh) com usuário "student" no "servera"
+
+[student@servera ~]$ mkdir Music Pictures Videos // Esse comando (mkdir) cria os 3 diretórios a seguir (Music, Pictures, Videos).
+
+[student@servera ~]$ touch song1.mp3 song2.mp3 song3.mp3 \
+song4.mp3 song5.mp3 song6.mp3 // Esse comando cria arquivos (touch) song1.mp3 até song6.mp3)
+
+[student@servera ~]$ touch snap1.jpg snap2.jpg snap3.jpg \
+snap4.jpg snap5.jpg snap6.jpg // Esse comando (touch) cria os arquivos snap1.jpg até snap6.jpg
+
+[student@servera ~]$ touch film1.avi film2.avi film3.avi \
+film4.avi film5.avi film6.avi // Esse comando (touch) cria os arquivos filme1.avi até film6.avi
+
+[student@servera ~]$ ls -l // Esse comando (ls) lista conteúdo do diretório em forma de listagem (-l)
+
+
+[student@servera ~]$ mv song1.mp3 song2.mp3 song3.mp3 \
+song4.mp3 song5.mp3 song6.mp3 Music // Esse comando (mv) move o conteúdo selecionado (song1.mp3 até song6.mp3) para destino (Music)
+
+[student@servera ~]$ mv snap1.jpg snap2.jpg snap3.jpg \
+snap4.jpg snap5.jpg snap6.jpg Pictures // Esse comando (mv) move o conteúdo selecionado (snap1.mp3 até snap6.mp3) para destino (Pictures)
+
+[student@servera ~]$ mv film1.avi film2.avi film3.avi \
+film4.avi film5.avi film6.avi Videos // Esse comando (mv) move o conteúdo selecionado (film1.mp3 até film6.mp3) para destino (Videos)
+
+[student@servera ~]$ ls -l Music Pictures Videos // Esse comando (ls) lista conteúdo dos diretórios (Music Pictures Videos) em forma de listagem (-l) de uma só vez
+
+[student@servera ~]$ mkdir friends family work // Esse comando (mkdir) cria os 3 diretórios a seguir (friends family work)
+
+[student@servera ~]$ ls -l // Esse comando (ls) lista conteúdo em forma de listagem (-l)
+
+[student@servera ~]$ cd friends // Esse comando (cd) entra no diretório "friends"
+
+[student@servera friends]$ cp ~/Music/song1.mp3 ~/Music/song2.mp3 \
+~/Pictures/snap1.jpg ~/Pictures/snap2.jpg ~/Videos/film1.avi \
+~/Videos/film2.avi . // Copia todo conteúdo 1 e 2 para diretório corrente atual (friends)
+
+[student@servera friends]$ ls -l // Listar conteúdo em forma de listagem
+
+[student@servera friends]$ cd ../family
+
+[student@servera family]$ cp ~/Music/song3.mp3 ~/Music/song4.mp3 \
+~/Pictures/snap3.jpg ~/Pictures/snap4.jpg ~/Videos/film3.avi \
+~/Videos/film4.avi . // Copia todo conteúdo 3 e 4 para diretório corrente atual (family)
+
+[student@servera family]$ ls -l // Lista conteúdo
+
+[student@servera family]$ cd ../work // Volto pro diretório superior e entro no diretório work
+
+[student@servera work]$ cp -r ~/family ~/friends .
+[student@servera work]$ ls -l
+
+[student@servera work]$ cd ..
+[student@servera ~]$ rm -r family friends work
+[student@servera ~]$ ls -l
+
+[student@servera ~]$ exit
+
+[student@workstation ~]$ lab finish files-manage

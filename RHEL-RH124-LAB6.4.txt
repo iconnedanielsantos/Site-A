@@ -1,0 +1,68 @@
+6.4
+
+[student@workstation ~]$ lab start users-superuser
+[student@workstation ~]$ ssh student@servera
+[student@servera ~]$ id
+[student@servera ~]$ pwd
+[student@servera ~]$ echo $HOME
+[student@servera ~]$ echo $PATH
+[student@servera ~]$ sudo su
+[root@servera student]# id
+[root@servera student]# pwd
+[root@servera student]# echo $HOME
+[root@servera student]# echo $PATH
+[root@servera student]# exit
+[student@servera ~]$ sudo su -
+[root@servera ~]# id
+[root@servera ~]# pwd
+[root@servera ~]# echo $HOME
+[root@servera ~]# echo $PATH
+[student@servera ~]$ sudo cat /etc/sudoers.d/operator1
+[student@servera ~]$ su - operator1
+[operator1@servera ~]$ tail -5 /var/log/messages
+[operator1@servera ~]$ sudo tail -5 /var/log/messages
+[operator1@servera ~]$ cp /etc/motd /etc/motdOLD
+[operator1@servera ~]$ sudo cp /etc/motd /etc/motdOLD
+[operator1@servera ~]$ rm /etc/motdOLD
+[operator1@servera ~]$ sudo rm /etc/motdOLD
+
+
+6.10
+
+[student@workstation ~]$ lab start users-password
+[student@workstation ~]$ ssh student@servera
+[student@servera ~]$ sudo usermod -L operator1
+[student@servera ~]$ su - operator1
+[student@servera ~]$ sudo usermod -U operator1
+[student@servera ~]$ su - operator1
+[operator1@servera ~]$ exit
+[student@servera ~]$ sudo -i
+[root@servera ~]# chage -M 90 operator1
+[root@servera ~]# chage -l operator1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

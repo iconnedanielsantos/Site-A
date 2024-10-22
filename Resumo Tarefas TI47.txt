@@ -1,0 +1,30 @@
+
+
+
+Tarefa 10 - Instalação, configuração e ativação de Regras de Firewall
+
+Tarefa 14 - Instalação, configuração e ativação de GPOs de Segurança
+
+Tarefa 15 - Análise e escolha de Antivírus
+
+Tarefa 16 - Instalação, configuração e ativação de antivírus em EndPoint
+
+Tarefa 17 - Instalação, configuração e ativação de Firewall do Windows no EndPoint
+
+Tarefa 18 - Instalação, configuração e ativação de Firewall de terceiro do Windows no EndPoint
+
+Tarefa 19 - Instalação, configuração e ativação de switchs no Cisco Packet Tracert para bloquear acesso indevido
+
+Tarefa 20 - Trabalho teórico sobre tipos e características / recursos de Firewall
+Tarefa 20 - Trabalho teórico sobre tipos e características / recursos de Proxi
+Tarefa 20 - Trabalho teórico sobre tipos e características / recursos de Antivírus
+Tarefa 20 - Trabalho teórico sobre tipos e características / recursos de Switch
+Tarefa 20 - Trabalho teórico sobre tipos e características / recursos de tecnologias de Fibra Ótica
+
+Tarefa 21 - Trabalho teórico sobre segurança NIC.BR
+
+Cada pessoa vai escolher um tema dentro das cartilhas do NIC.BR. e fazer uma apresentação sobre esse tema mostrando pra sala como se proteger em relação aquele itme escolhido
+https://cartilha.cert.br/fasciculos/
+
+
+TIXX - UC06 - T04/Acesso ao WEBGUI do PFSense
